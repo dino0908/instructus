@@ -76,4 +76,89 @@ tbody tr:hover {
     text-align: center;
 }
 
+#overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.85);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
 
+.overlay-container{
+    width: 40%;
+    height: 70%;
+    min-height: 700px;
+    min-width: 400px;
+    background: #f7fafd;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.overlay-content{
+    display: inline-block;
+    width: 100%;
+    height: 82%;
+    padding: 5% 10%;
+    margin: auto;
+    overflow: scroll;
+}
+
+.close-overlay-container{
+    display: inline-block;
+    width: 100%;
+    padding-top: 3%;
+    padding-right: 3%;
+    height: 5%;
+}
+
+#close-overlay{
+    border: none;
+    background: transparent;
+    size: 10px;
+    float: right;
+}
+
+#close-overlay img{
+    width:30px; /* you can use % */
+    height: 30px;
+}
+
+.overlay-title-container{
+    padding-bottom: 5%;
+    overflow-wrap: break-word;
+}
+
+.details-block{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow-wrap: break-word;
+    color: #1c1c1c;
+}
+
+.overlay-button-container{
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-button{
+    border: none;
+    background: #ff556e;
+    padding: 2% 5%;
+    border-radius: 15px;
+    width: 70%;
+    color: #ffffff;
+    size: 10px;
+    float: bottom;
+    display: none;
+    bottom: 10px;
+}

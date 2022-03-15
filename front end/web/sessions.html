@@ -108,6 +108,49 @@
     </header> <!-- end of ex-header -->
     <!-- end of header -->
 
+    <div id="overlay">
+        <div class="overlay-container">
+            <div class="close-overlay-container">
+                <button onclick="hideOverlay()" id="close-overlay">
+                    <img src="images/cross.png">
+                </button>
+            </div>
+
+            <div class="overlay-content">
+                <div class="overlay-title-container">
+                    <h3 id="overlay-content-title"></h3>
+                    <p id="overlay-content-content"></p>
+                </div>
+                <div class="overlay-details-container">
+                    <div class="details-block">
+                        <b>Date:</b>
+                        <p id="details-date"></p>
+                    </div>
+                    <div class="details-block">
+                        <b>Time:</b>
+                        <p id="details-time"></p>
+                    </div>
+                    <div class="details-block">
+                        <b>Instructor:</b>
+                        <p id="details-instructor-name"></p>
+                    </div>
+                    <div class="details-block">
+                        <b>Meeting Link:</b>
+                        <p><a id="details-meeting-link"></a></p>
+                    </div>
+                    <div class="details-block">
+                        <b>Status:</b>
+                        <p><a id="details-status"></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-button-container">
+                <button class="overlay-button" id="modify-button">Modify / Cancel Session</button>
+                <button class="overlay-button" id="feedback-button">Feedback</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Privacy Content -->
     <div class="ex-basic-2">
         <div class="container">
@@ -121,42 +164,6 @@
                 </tr>
                 </thead>
                 <tbody id="session-table-body">
-<!--                <tr>-->
-<!--                    <td class="column1">2017-09-29 01:22</td>-->
-<!--                    <td class="column2">200398</td>-->
-<!--                    <td class="column3">iPhone X 64Gb Grey</td>-->
-<!--                    <td class="column4">$999.00</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td class="column1">2017-09-28 05:57</td>-->
-<!--                    <td class="column2">200397</td>-->
-<!--                    <td class="column3">Samsung S8 Black</td>-->
-<!--                    <td class="column4">$756.00</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td class="column1">2017-09-26 05:57</td>-->
-<!--                    <td class="column2">200396</td>-->
-<!--                    <td class="column3">Game Console Controller</td>-->
-<!--                    <td class="column4">$22.00</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td class="column1">2017-09-25 23:06</td>-->
-<!--                    <td class="column2">200392</td>-->
-<!--                    <td class="column3">USB 3.0 Cable</td>-->
-<!--                    <td class="column4">$10.00</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td class="column1">2017-09-24 05:57</td>-->
-<!--                    <td class="column2">200391</td>-->
-<!--                    <td class="column3">Smartwatch 4.0 LTE Wifi</td>-->
-<!--                    <td class="column4">$199.00</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td class="column1">2017-09-23 05:57</td>-->
-<!--                    <td class="column2">200390</td>-->
-<!--                    <td class="column3">Camera C430W 4k</td>-->
-<!--                    <td class="column4">$699.00</td>-->
-<!--                </tr>-->
                 </tbody>
             </table>
         </div> <!-- end of container -->
@@ -164,19 +171,19 @@
     <!-- end of privacy content -->
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Sessions</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
+<!--    &lt;!&ndash; Breadcrumbs &ndash;&gt;-->
+<!--    <div class="ex-basic-1">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12">-->
+<!--                    <div class="breadcrumbs">-->
+<!--                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Sessions</span>-->
+<!--                    </div> &lt;!&ndash; end of breadcrumbs &ndash;&gt;-->
+<!--                </div> &lt;!&ndash; end of col &ndash;&gt;-->
+<!--            </div> &lt;!&ndash; end of row &ndash;&gt;-->
+<!--        </div> &lt;!&ndash; end of container &ndash;&gt;-->
+<!--    </div> &lt;!&ndash; end of ex-basic-1 &ndash;&gt;-->
+<!--    &lt;!&ndash; end of breadcrumbs &ndash;&gt;-->
 
     
     <!-- Footer -->
