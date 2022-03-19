@@ -1,0 +1,51 @@
+.outercontainer {
+    height: 700px;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid rgb(71, 70, 70);
+    border-width: 3px;
+    width: 70%;
+}
+
+.titlecontainer {
+    height: 60px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+    border: 1px solid #777;
+
+}
+
+#descriptioninput {
+    height: 400px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+    border: 1px solid #777;
+    width: 96%;
+    padding-left: 2%;
+}
+
+#match {
+    margin-left: 90%;
+    margin-top: 2%;
+}
+
+#titleinput {
+    height: 50px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+    border: 1px solid #777;
+    width: 96%;
+    padding-left: 2%;
+}
+
+#date {
+    margin-top: 2%;
+    margin-left: 2%;
+    
+}

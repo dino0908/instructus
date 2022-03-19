@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+
     <title>Ask away!</title>
 
     <!-- Custom fonts for this template-->
@@ -19,6 +20,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/askaquestion.css">
 
 </head>
 
@@ -45,7 +47,8 @@
                     <span>Dashboard</span></a>
             </li>
 
-        
+        <!-- Divider -->
+        <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -300,13 +303,24 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">ask qn here</h1>
-                    <p class="mb-4">ask qn here</p>
+                    <h1 class="h3 mb-2 text-gray-800">Ask a question</h1>
+                    <p class="mb-4"></p>
+                    
+                <div class="outercontainer">
+                    
+                    <input type="text" id="titleinput" placeholder="Title">
 
+                    <input type="text" id="descriptioninput" placeholder="Description   ">
+                    <input type="datetime-local" name="date" id="date">Date
+                    <button type="submit" id="match">Match</button>
+                    </div>
+                    
+                </div>
                     
 
         </div>
         <!-- End of Content Wrapper -->
+        
 
     </div>
     <!-- End of Page Wrapper -->
