@@ -2,6 +2,31 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
+
+label[for="student"], label[for="instructor"] {
+	position: relative;
+	color: grey;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: .7em;
+	background-color: rgb(241, 234, 234);
+	border-color: white;
+	width: 150px;
+}
+
+input[type="radio"] {
+	left: -999em;
+	position: absolute;
+}
+
+input[type="radio"]:checked + label {
+	background-color: rgb(238, 93, 93);
+	border-width: 1px;
+	border-color: black;
+	color: white;
+}
+
+
 #login-page * {
 	box-sizing: border-box;
 }
