@@ -108,20 +108,21 @@
     </header> <!-- end of ex-header -->
     <!-- end of header -->
 
-    <div id="overlay">
+    <div id="overlay-mask"></div>
+
+    <div id="base-overlay" class="overlay">
         <div class="overlay-container">
             <div class="close-overlay-container">
-                <button onclick="hideOverlay()" id="close-overlay">
+                <button onclick="hideOverlay()" class="close-overlay">
                     <img src="images/cross.png">
                 </button>
             </div>
-
             <div class="overlay-content">
                 <div class="overlay-title-container">
                     <h3 id="overlay-content-title"></h3>
                     <p id="overlay-content-content"></p>
                 </div>
-                <div class="overlay-details-container">
+                <div class="overlay-details-container" id="details-overlay">
                     <div class="details-block">
                         <b>Date:</b>
                         <p id="details-date"></p>
@@ -143,13 +144,81 @@
                         <p><a id="details-status"></a></p>
                     </div>
                 </div>
+                <div class="overlay-details-container" id="modify-session-overlay">
+                    <div class="details-block">
+<!--                        <div class="details-block">-->
+<!--                            <b>Session Date / Time:</b>-->
+<!--                            <p id="details-current-date-time"></p>-->
+<!--                        </div>-->
+                        <form id="modification-form">
+                            <div class="input-container">
+                                <b>Date:</b>
+                                <div class="centered-form-container">
+                                    <input type="date" id="date-picker" class="dt-ip">
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <b>Time:</b>
+                                <div class="centered-form-container">
+                                    <input type="time" id="time-picker" class="dt-ip">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="overlay-details-container" id="session-feedback-overlay">
+                    <div class="details-block">
+                        <form id="feedback-form" class="rating">
+                            <label>
+                                <input type="radio" name="stars" value="1" id="1star" />
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="2" id="2star"/>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="3" id="3star"/>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="4" id="4star"/>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="stars" value="5" id="5star"/>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                        </form>
+
+                    </div>
+                </div>
             </div>
             <div class="overlay-button-container">
                 <button class="overlay-button" id="modify-button">Modify / Cancel Session</button>
                 <button class="overlay-button" id="feedback-button">Feedback</button>
+                <button class="overlay-button half-size-button" id="cancel-modification-button" onclick="cancelModifications()">Cancel</button>
+                <button class="overlay-button half-size-button" id="cancel-feedback-button" onclick="cancelFeedback()">Cancel</button>
+                <input class="overlay-button half-size-button" id="submit-modification-button" type="submit" form="modification-form" value="Update"/>
+                <input class="overlay-button half-size-button" id="submit-feedback-button" type="submit" form="feedback-form" value="Submit"/>
             </div>
         </div>
     </div>
+
+
 
     <!-- Privacy Content -->
     <div class="ex-basic-2">

@@ -26,7 +26,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 1011234,
                     "instructor_name": "Joshua Aw",
                     "meeting_link": "www.zoom.com/my-zoom-room",
-                    "date_time": "2017-07-21T17:32:28"
+                    "date_time": "2017-07-21T17:32:28",
+                    "rating": null
                 },
                 {
                     'question' : {
@@ -36,7 +37,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 1011235,
                     "instructor_name": "Jon Li",
                     "meeting_link": "www.zoom.com/jons-zoom-room",
-                    "date_time": "2017-11-23T18:32:28"
+                    "date_time": "2017-11-23T18:32:28",
+                    "rating": 2
                 },
                 {
                     'question' : {
@@ -46,7 +48,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 1011236,
                     "instructor_name": "Jon Li",
                     "meeting_link": "www.zoom.com/jons-zoom-room",
-                    "date_time": "2017-10-23T18:32:28"
+                    "date_time": "2017-10-23T18:32:28",
+                    "rating": null
                 },
                 {
                     'question' : {
@@ -56,7 +59,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 1011237,
                     "instructor_name": "Jon Li",
                     "meeting_link": "www.zoom.com/jons-zoom-room",
-                    "date_time": "2017-09-23T18:32:28"
+                    "date_time": "2017-09-23T18:32:28",
+                    "rating": 5
                 },
                 {
                     'question' : {
@@ -66,7 +70,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 1011238,
                     "instructor_name": "Jon Li",
                     "meeting_link": "www.zoom.com/jons-zoom-room",
-                    "date_time": "2017-08-23T18:32:28"
+                    "date_time": "2017-08-23T18:32:28",
+                    "rating": null
                 }
                 ,
                 {
@@ -77,7 +82,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 6969691,
                     "instructor_name": null,
                     "meeting_link": null,
-                    "date_time": "2017-09-23T18:32:28"
+                    "date_time": "2017-09-23T18:32:28",
+                    "rating": null
                 },
                 {
                     'question' : {
@@ -87,7 +93,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 6969692,
                     "instructor_name": null,
                     "meeting_link": null,
-                    "date_time": "2022-04-23T18:32:28"
+                    "date_time": "2022-04-23T18:32:28",
+                    "rating": null
                 },
                 {
                     'question' : {
@@ -97,7 +104,8 @@ const server = http.createServer((req, res) => {
                     "question_id": 6969692,
                     "instructor_name": "Jon Jones",
                     "meeting_link": "www.zoom.com/my-zoom-room",
-                    "date_time": "2022-04-23T18:32:28"
+                    "date_time": "2022-04-23T18:32:28",
+                    "rating": null
                 }
             ]));
 
