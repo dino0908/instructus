@@ -25,8 +25,7 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/account.css">
-    <link rel="stylesheet" href="test.css">
+    <link href="css/account.css"rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -109,18 +108,20 @@
                 <input name="name" type="text" placeholder="Name" required/>
                 <input name="username" type="text" placeholder="Username" required/>
                 <input name="password" type="password" placeholder="Password" required/>
+                <P>I am signing up as an</P>
+                <div class="radiobuttons">
+                    <input type="radio" name="type" id="student" value="s">
+                    <label for="student">Student</label>
 
-                <input type="radio" name="type" id="student-button">
-                <label for="student">Student</label>
-                <input type="radio" name="type" id="instructor-button">
-                <label for="instructor">Instructor</label>
-
+                    <input type="radio" name="type" id="instructor" value="i">
+                    <label for="instructor">Instructor</label>
+                </div> <br>       
                 <button type="submit">Sign Up</button>
                 
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#" method="POST">
+            <form action="../../startbootstrap-sb-admin-2-gh-pages/dashboard.php" method="POST">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>

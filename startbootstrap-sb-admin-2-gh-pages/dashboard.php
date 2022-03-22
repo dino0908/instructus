@@ -9,9 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
-    <title>Ask away!</title>
-
+    <title>InstructUS</title>
+    <link rel="stylesheet" href="./css/custom.css">
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -20,7 +19,6 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/askaquestion.css">
 
 </head>
 
@@ -34,21 +32,25 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    
+                </div>
                 InstructUS
+                <div class="sidebar-brand-text mx-3"> </div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider">
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -77,7 +79,7 @@
             </li>
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Ask a question</span></a>
@@ -97,6 +99,9 @@
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
+
+            <!-- Sidebar Message -->
+            
 
         </ul>
         <!-- End of Sidebar -->
@@ -267,7 +272,9 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                username
+                                </span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -303,24 +310,19 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Ask a question</h1>
-                    <p class="mb-4"></p>
-                    
-                <div class="outercontainer">
-                    
-                    <input type="text" id="titleinput" placeholder="Title">
-
-                    <input type="text" id="descriptioninput" placeholder="Description   ">
-                    <input type="datetime-local" name="date" id="date">Date
-                    <button type="submit" id="match">Match</button>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>    
                     </div>
-                    
-                </div>
-                    
+
+              
+
+            </div>
+            <!-- End of Main Content -->
+
+            
 
         </div>
         <!-- End of Content Wrapper -->
-        
 
     </div>
     <!-- End of Page Wrapper -->
@@ -366,7 +368,6 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-    <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
 
