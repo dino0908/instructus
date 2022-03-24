@@ -7,6 +7,8 @@
     width: 70%;
 }
 
+
+
 .titlecontainer {
     height: 60px;
     margin-top: 2%;
@@ -17,7 +19,7 @@
 
 }
 
-#descriptioninput {
+/* #descriptioninput {
     height: 400px;
     margin-top: 2%;
     margin-left: 2%;
@@ -26,26 +28,57 @@
     border: 1px solid #777;
     width: 96%;
     padding-left: 2%;
-}
+} */
 
 #match {
-    margin-left: 90%;
-    margin-top: 2%;
+    margin-left: 2%;
+    margin-top: 5%;
+    background-color: rgb(173, 180, 174);
+	color: rgb(5, 5, 5);
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: .7em;
+	background-color: rgb(240, 238, 238);
+	border-color: rgb(5, 5, 5);
+	width: 150px;
+}
+
+#match:hover {
+    background-color: rgb(76, 217, 92);
 }
 
 #titleinput {
     height: 50px;
-    margin-top: 2%;
+    margin-top: 8%;
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 15px;
     border: 1px solid #777;
     width: 96%;
     padding-left: 2%;
+    margin-bottom: 2%;
+
 }
 
 #date {
     margin-top: 2%;
     margin-left: 2%;
     
+    
+}
+
+.descriptioncontainer {
+    margin-left: 2%;
+
+}
+
+#output {
+    width: 98%;
+    height: 200px;
+    border: 1px solid #777;
+    border-radius: 15px;
+}
+
+.buttoncontainer {
+    margin-bottom: 0.5%;
 }
