@@ -9,20 +9,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Tables</title>
 
-    <!-- Custom fonts for this template -->
+    <title>Ask away!</title>
+
+    <!-- Custom fonts for this template-->
+    <script src="https://kit.fontawesome.com/7e77e89b27.js" crossorigin="anonymous"></script>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/sessions.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/askaquestion.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="file.css">
 
 </head>
 
@@ -39,23 +40,20 @@
                 InstructUS
             </a>
 
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-    
-
+      
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="question.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Ask a question</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
-                <a class="nav-link" href="tables.html">
+            <li class="nav-item">
+                <a class="nav-link" href="sessions.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Sessions</span></a>
             </li>
@@ -76,18 +74,17 @@
 
             <!-- Main Content -->
             <div id="content">
-
+                
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <form class="form-inline">
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </form>
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
-            
+                    
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -245,7 +242,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="profile.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -253,7 +250,10 @@
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
-                             
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -270,154 +270,41 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Sessions</h6>
-                        </div>
-                        <div class="card-body">
-                            <!-- end of header -->
-
-                            <div id="overlay-mask"></div>
-
-                            <div id="base-overlay" class="overlay">
-                                <div class="overlay-container">
-                                    <div class="close-overlay-container">
-                                        <button onclick="hideOverlay()" class="close-overlay">
-                                            <img src="img/cross.png">
-                                        </button>
+                    <div class="container rounded bg-white mt-5 mb-5">
+                        <div class="row">
+                            <div class="col-md-3 border-right">
+                                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
+                            </div>
+                            <div class="col-md-5 border-right">
+                                <div class="p-3 py-5">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4 class="text-right">Profile Settings</h4>
                                     </div>
-                                    <div class="overlay-content">
-                                        <div class="overlay-title-container">
-                                            <h3 id="overlay-content-title"></h3>
-                                            <p id="overlay-content-content"></p>
-                                        </div>
-                                        <div class="overlay-details-container" id="details-overlay">
-                                            <div class="details-block">
-                                                <b>Date:</b>
-                                                <p id="details-date"></p>
-                                            </div>
-                                            <div class="details-block">
-                                                <b>Time:</b>
-                                                <p id="details-time"></p>
-                                            </div>
-                                            <div class="details-block">
-                                                <b>Instructor:</b>
-                                                <p id="details-instructor-name"></p>
-                                            </div>
-                                            <div class="details-block">
-                                                <b>Meeting Link:</b>
-                                                <p><a id="details-meeting-link"></a></p>
-                                            </div>
-                                            <div class="details-block">
-                                                <b>Status:</b>
-                                                <p><a id="details-status"></a></p>
-                                            </div>
-                                        </div>
-                                        <div class="overlay-details-container" id="modify-session-overlay">
-                                            <div class="details-block">
-                                                <!--                        <div class="details-block">-->
-                                                <!--                            <b>Session Date / Time:</b>-->
-                                                <!--                            <p id="details-current-date-time"></p>-->
-                                                <!--                        </div>-->
-                                                <form id="modification-form">
-                                                    <div class="input-container">
-                                                        <b>Date:</b>
-                                                        <div class="centered-form-container">
-                                                            <input type="date" id="date-picker" class="dt-ip">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="input-container">
-                                                        <b>Time:</b>
-                                                        <div class="centered-form-container">
-                                                            <input type="time" id="time-picker" class="dt-ip">
-                                                        </div>
-                                                    </div>
-                                                </form>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="overlay-details-container" id="session-feedback-overlay">
-                                            <div class="details-block">
-                                                <form id="feedback-form" class="rating">
-                                                    <label>
-                                                        <input type="radio" name="stars" value="1" id="1star" />
-                                                        <span class="icon">★</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="stars" value="2" id="2star"/>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="stars" value="3" id="3star"/>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="stars" value="4" id="4star"/>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                    </label>
-                                                    <label>
-                                                        <input type="radio" name="stars" value="5" id="5star"/>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                        <span class="icon">★</span>
-                                                    </label>
-                                                </form>
-
-                                            </div>
-                                        </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="name" value=""></div>
+                                        
                                     </div>
-                                    <div class="overlay-button-container">
-                                        <button class="overlay-button" id="modify-button">Modify / Cancel Session</button>
-                                        <button class="overlay-button" id="feedback-button">Feedback</button>
-                                        <button class="overlay-button half-size-button" id="cancel-modification-button" onclick="cancelModifications()">Cancel</button>
-                                        <button class="overlay-button half-size-button" id="cancel-feedback-button" onclick="cancelFeedback()">Cancel</button>
-                                        <input class="overlay-button half-size-button" id="submit-modification-button" type="submit" form="modification-form" value="Update"/>
-                                        <input class="overlay-button half-size-button" id="submit-feedback-button" type="submit" form="feedback-form" value="Submit"/>
+                                    <div class="row mt-3">
+                                        
+                                        <div class="col-md-12" style="margin-bottom: 10px;"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                                        <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div>
                                     </div>
+                            
+                                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
                                 </div>
                             </div>
-
-                            <!-- Privacy Content -->
-                            <div class="ex-basic-2">
-                                <div class="container">
-                                    <table id="session-table">
-                                        <thead>
-                                        <tr class="table100-head">
-                                            <th class="column1">Title</th>
-                                            <th class="column2">Date</th>
-                                            <th class="column3">Time</th>
-                                            <th class="column4">Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody id="session-table-body">
-                                        </tbody>
-                                    </table>
-                                </div> <!-- end of container -->
-                            </div> <!-- end of ex-basic-2 -->
+                            
                         </div>
                     </div>
-
+                    </div>
+                    </div>
+                    
                 </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
+                    
 
         </div>
         <!-- End of Content Wrapper -->
+        
 
     </div>
     <!-- End of Page Wrapper -->
@@ -447,6 +334,7 @@
         </div>
     </div>
 
+    <script src="category.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -458,12 +346,13 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/sessions.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+
 </body>
 
 </html>
