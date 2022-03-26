@@ -3,11 +3,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: "Roboto", sans-serif;
-    background: #f7f6ff;
-  }
-  
   h2 {
     margin: 16px;
   }
@@ -48,7 +43,6 @@
   
   .selected::after {
     content: "";
-    background: url("img/arrow-down.svg");
     background-size: contain;
     background-repeat: no-repeat;
   

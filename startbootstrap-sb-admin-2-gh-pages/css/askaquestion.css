@@ -5,6 +5,10 @@
     border: 1px solid rgb(71, 70, 70);
     border-width: 3px;
     width: 70%;
+    min-width: 998px;
+    min-height: 694px;
+    max-width: 1500px;
+    max-height: 182px;
 }
 
 
@@ -44,7 +48,8 @@
 }
 
 #match:hover {
-    background-color: rgb(76, 217, 92);
+    background-color: rgb(132, 138, 132);
+    color: white;
 }
 
 #titleinput {
