@@ -247,7 +247,7 @@
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
-                            
+
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -281,7 +281,7 @@
                                         back. Please be certain.</p>
                                 </div> <button class="btn btn-danger" type="button" style="margin-bottom: 50px;">Delete
                                     Account</button> <br>
-                                    
+
 
                             </form>
 
@@ -295,20 +295,22 @@
                                         type="text" class="form-control" placeholder="Enter your old password"> <input
                                         type="text" class="form-control mt-1" placeholder="New password"> <input
                                         type="text" class="form-control mt-1" placeholder="Confirm new password"></div>
-                                        <button class="btn" type="button" style="margin-bottom: 25px; background-color: rgb(125, 133, 132); color: white;">Change Password</button> <br>
-                                        
+                                <button class="btn" type="button"
+                                    style="margin-bottom: 25px; background-color: rgb(233, 137, 28); color: white;">Change
+                                    Password</button> <br>
+
                             </form>
                             <hr>
                             <form>
                                 <div class="form-group"> <label class="d-block">Two Factor Authentication</label>
-                                    <button class="btn btn-info" type="button">Enable two-factor authentication</button>
+                                    <button class="btn btn-info" type="button" style="background-color: rgb(25, 121, 230);">Enable two-factor authentication</button>
                                     <p class="small text-muted mt-2">Two-factor authentication adds an additional layer
                                         of security to your account by requiring more than just a password to log in.
                                     </p>
                                 </div>
                             </form>
                             <hr>
-                            <form>
+                            <form style="margin-bottom: 10px;">
                                 <div class="form-group mb-0"> <label class="d-block">Sessions</label>
                                     <p class="font-size-sm text-secondary">This is a list of devices that have logged
                                         into your account. Revoke any sessions that you do not recognize.</p>
@@ -317,12 +319,27 @@
                                             <div>
                                                 <h6 class="mb-0">Singapore 190.24.335.55</h6> <small
                                                     class="text-muted">Your current session seen in Singapore</small>
-                                            </div> <button class="btn btn-light btn-sm ml-auto" type="button">More
-                                                info</button>
+                                            </div> 
                                         </li>
                                     </ul>
                                 </div>
                             </form>
+
+                            <div class="tab-pane active" id="billing">
+                                <h6>BILLING SETTINGS</h6>
+                                <hr>
+                                <form>
+                                    <div class="form-group"> <label class="d-block mb-0">Payment Method</label>
+                                        <div class="small text-muted mb-3">You have not added a payment method</div>
+                                        <button class="btn btn-info" type="button" style="background-color: rgb(53, 187, 82);">Add Payment Method</button>
+                                    </div>
+                                    <div class="form-group mb-0"> <label class="d-block">Payment History</label>
+                                        <div class="border border-gray-500 bg-gray-200 p-3 text-center font-size-sm">You
+                                            have not made any payment.</div>
+                                    </div>
+                                </form>
+                            </div>
+
                         </div>
 
                     </div>
