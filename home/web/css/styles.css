@@ -2201,3 +2201,15 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+#studyimg {
+	width: 610px;
+	height: 580px;
+	padding-right: 50px;
+}
+
+#codeimg {
+	width: 900px;
+	height: 500px;;
+}
+
